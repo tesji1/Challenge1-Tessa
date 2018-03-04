@@ -3,58 +3,53 @@
   <head>
   	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<title>Dashboard</title>
+    <link rel="shortcut icon" href="assets/img/spacex.png">
+  	<title>Voorraad</title>
   	<script type="text/javascript" src="assets/js/chart.min.js"> </script>
     <script type="text/javascript" src="assets/js/jquery3.3.1.js"></script>
-    <link rel="shortcut icon" href="assets/img/spacex.png">
   	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
   	<link rel="stylesheet" type="text/css" href="assets/css/nav.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.min.css">
   </head>
 
   <body>
     <!-- navigatie -->
-        <nav class="topnav" id="myTopnav">
-          <a href="index.html"><img src="assets/img/spacex.png" alt="logo space"/></a>
-          <a href="index.html" > Dashboard</a>
-          <a href="voorraad.html" class="active">voorraden</a>
-          <a href="index.html" class="right"><img src="assets/img/avatar.png" class="avatar-pf" alt="avatar"/><span>log uit</span></a>
-          <a href="#" id="menu">&#9776;</a>
-        </nav>
+    <nav class="topnav" id="myTopnav">
+      <a href="index.html"><img src="assets/img/spacex.png" alt="logo space"/></a>
+      <a href="index.html" > Dashboard</a>
+      <a href="voorraad.html" class="active">voorraden</a>
+      <a href="index.html" class="right"><img src="assets/img/avatar.png" class="avatar-pf" alt="avatar"/><span>log uit</span></a>
+      <a href="#" id="menu">&#9776;</a>
+    </nav>
     <!-- einde navigatie -->
 
   <!-- container start -->
-      <div class="container">
-        <section class="flex-container">
+      <div class="container"><!-- container -->
+        <section class="flex-container"><!-- flex container -->
+          <article class="flex-item">  <!-- flex item 1 --> 
+            <p> Aantal blikken eten voorraad </p>
+            <canvas id="myChart"></canvas>
+            <button type="button" class="button-plus" id="eten_plus">+500</button>
+            <button type="button" class="button-min" id="eten_min">-500</button>
+          </article> <!-- einde flex item 2 -->
 
-              <!-- flex item 1 -->
-              <article class="flex-item">  
-                <p> Aantal blikken eten voorraad </p>
-                <canvas id="myChart"></canvas>
-                <button type="button" class="button-plus" id="eten_plus">+500</button>
-                <button type="button" class="button-min" id="eten_min">-500</button>
-              </article>
+          <!-- flex item 2 -->
+          <article class="flex-item">  
+            <p> Aantal flessen water voorraad </p>
+            <canvas id="myPie"></canvas>
+            <button type="button" class="button-plus" id="water_plus">+500</button>
+            <button type="button" class="button-min" id="water_min">-500</button>
+          </article class="flex-item">
               <!-- einde flex item 2 -->
-
-              <!-- flex item 1 -->
-              <article class="flex-item">  
-                <p> Aantal flessen water voorraad </p>
-                <canvas id="myPie"></canvas>
-                <button type="button" class="button-plus" id="water_plus">+500</button>
-                <button type="button" class="button-min" id="water_min">-500</button>
-              </article class="flex-item">
-              <!-- einde flex item 2 -->
-
-          </section>
-        </div>
-		<!-- einde nav -->
-        <footer>
+        </section> <!-- einde flex container -->
+      </div> <!-- einde container -->
+        
+      <footer><!-- footer credits -->
         <p> Made by Tessa Jaworski &copy; </p>
-        </footer>
-       
+      </footer> <!-- einde footer -->
+    </body>
 
-</body>
 
+<!-- javascript files -->
 	<script type="text/javascript" src="assets/js/main.js"> </script>
 
 </html>

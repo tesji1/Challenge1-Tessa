@@ -1,70 +1,56 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/img/spacex.png">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dashboard</title>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="shortcut icon" href="assets/img/spacex.png">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/nav.css">
+  </head>
 
 
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/nav.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.min.css">
-</head>
+  <body>
+    <nav class="topnav" id="myTopnav">
+      <a href="index.html"><img src="assets/img/spacex.png" alt="logo space"/></a>
+      <a href="index.html" class="active"> Dashboard</a>
+      <a href="voorraad.html">voorraden</a>
+      <a href="index.html" class="right"><img src="assets/img/avatar.png" class="avatar-pf" alt="avatar"/><span>log uit</span></a>
+      <a href="#" id="menu">&#9776;</a>
+    </nav>
 
+    <div class="container">
+      <section class="flex-container"> <!-- flex container -->
+        <article class="flex-item"> <!-- flex- item 1-->
+          <div id="distance"> <!-- distance -->
+            <h2> Afstand naar mars </h2>
+            <h4>Afstand afgelegt</h2>
+            <h3 class="counter"><span id="counterup">0</span> km</h3>
+            <p id="updateChart"> </p>
+            <h4>Bestemming </h2>
+            <h3 class="counter"><span id="countdowntimer">280.000.000</span> km</h3>
+          </div> <!-- einde distance -->
+        </article><!-- einde flex item 1 -->
+  
+        <article class="flex-item"><!-- flex item 2 -->
+          <div id="km"></div> <!-- chart snelheid -->
+        </article><!-- einde flex item 2 -->
+        <article class="flex-item"> <!-- flex item 2 --> 
+          <div id="chartContainer"></div> 
+        </article> <!-- einde flex item 2 -->
+      </section> <!-- einde flex container -->
+    </div><!-- einde container -->
+    
+    <footer>
+      <p> Made by Tessa Jaworski &copy; </p>
+    </footer>    
+  </body>
 
-<body>
-        <nav class="topnav" id="myTopnav">
-          <a href="index.html"><img src="assets/img/spacex.png" alt="logo space"/></a>
-          <a href="index.html" class="active"> Dashboard</a>
-          <a href="voorraad.html">voorraden</a>
-          <a href="index.html" class="right"><img src="assets/img/avatar.png" class="avatar-pf" alt="avatar"/><span>log uit</span></a>
-          <a href="#" id="menu">&#9776;</a>
-        </nav>
-
-        <div class="container">
-            <section class="flex-container"> <!-- flex container -->
-                <!-- flex item 1 -->
-                <article class="flex-item"> <!-- flex- item-->
-                  <div id="distance"> <!-- distance -->
-                    <h2> Afstand naar mars </h2>
-                    <h4>Afstand afgelegt</h2>
-                    <h3 class="counter"><span id="counterup">0</span> km</h3>
-                    <p id="updateChart"> </p>
-                    <h4>Bestemming </h2>
-                    <h3 class="counter"><span id="countdowntimer">280.000.000</span> km</h3>
-                  </div> <!-- einde distance -->
-                </article>
-                  <!-- einde flex item -->
-                  <!-- flex item 2 -->
-
-                  <!-- einde flex item 2 -->
-                  <!-- flex item 3 -->
-                  <article class="flex-item"> 
-                    <div id="km"></div>
-                  </article>
-                  <!-- einde flex item 2 -->
-                  <article class="flex-item">  
-                    <div id="chartContainer"></div> 
-                  </article>           
-            </section> <!-- einde flex container -->
-        </div>
-                <footer>
-        <p> Made by Tessa Jaworski &copy; </p>
-        </footer>
-       
-</body>
-
-
-
-<script type="text/javascript">
-
-</script>
-
-    <script type="text/javascript" src="assets/js/canvasjs.min.js"> </script> 
-        <script type="text/javascript" src="assets/js/main-canvasjs.js"> </script>
-          <script type="text/javascript" src="assets/js/main.js"> </script>
-          <script type="text/javascript" src="assets/js/count-timer.js"> </script>
+<!-- javascript files -->
+  <script type="text/javascript" src="assets/js/canvasjs.min.js"> </script> 
+  <script type="text/javascript" src="assets/js/main-canvasjs.js"> </script>
+  <script type="text/javascript" src="assets/js/main.js"> </script>
+  <script type="text/javascript" src="assets/js/count-timer.js"> </script>
 
 </html>
