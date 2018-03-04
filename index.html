@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Dashboard</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 
-	<script type="text/javascript" src="assets/js/utils.js"> </script>
-    <script type="text/javascript" src="assets/js/Chart.min.js"> </script>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/nav.css">
+      <script type="text/javascript" src=""></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/nav.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.min.css">
 </head>
+
+
 <body>
-	<nav class="topnav" id="myTopnav">
-		  	<a href="index.html"><img src="assets/img/space-x.png" alt="logo space"/></a>
-            <a href="index.html">Dashboard</a>
-		  	<a href="index.html">Voertuig informatie</a>
-		  	<a href="challenge1a.html">Voertuig omgeving</a>
-		  	<a href="challenge1.html">voorraden</a>
-		  	<a href="challenge2a.html">Toolss</a>
-		  	<a href="#" id="menu">&#9776;</a>
-		</nav>
+        <nav class="topnav" id="myTopnav">
+          <a href="index.html"><img src="assets/img/spacex.png" alt="logo space"/></a>
+          <a href="index.html" class="active"> Dashboard</a>
+          <a href="voorraad.html">voorraden</a>
+          <a href="index.html" class="right"><img src="assets/img/avatar.png" class="avatar-pf" alt="avatar"/><span>log uit</span></a>
+          <a href="#" id="menu">&#9776;</a>
+        </nav>
 
-    <!-- container start -->
         <div class="container">
-            <section class="flex-container">
-                  <!-- flex item 1 -->
-                  <article class="flex-item">
-            
-                      <canvas id="canvas"></canvas>
-
-                  </article>
+            <section class="flex-container"> <!-- flex container -->
+                <!-- flex item 1 -->
+                <article class="flex-item"> <!-- flex- item-->
+                  <div id="distance"> <!-- distance -->
+                    <h2> Afstand naar mars </h2>
+                    <h4>Afstand afgelegt</h2>
+                    <h3 class="counter"><span id="counterup">0</span> km</h3>
+                    <p id="updateChart"> </p>
+                    <h4>Bestemming </h2>
+                    <h3 class="counter"><span id="countdowntimer">280.000.000</span> km</h3>
+                  </div> <!-- einde distance -->
+                </article>
                   <!-- einde flex item -->
                   <!-- flex item 2 -->
-                  <article class="flex-item">  
-    
-                        <canvas id="myChart"></canvas>
-         
-                  </article>
+
                   <!-- einde flex item 2 -->
                   <!-- flex item 3 -->
-                  <article class="flex-item">  
-           
-                       <canvas id="speedChart" ></canvas>
-         
+                  <article class="flex-item"> 
+                    <div id="km"></div>
                   </article>
                   <!-- einde flex item 2 -->
-            </section>
+                  <article class="flex-item">  
+                    <div id="chartContainer"></div> 
+                  </article>           
+            </section> <!-- einde flex container -->
         </div>
-		<!-- einde nav -->
-        <footer>
+                <footer>
         <p> Made by Tessa Jaworski &copy; </p>
         </footer>
        
-
 </body>
-	<script type="text/javascript" src="assets/js/main.js"> </script>
+
+
+
+<script type="text/javascript">
+
+</script>
+
+    <script type="text/javascript" src="assets/js/canvasjs.min.js"> </script> 
+        <script type="text/javascript" src="assets/js/main-canvasjs.js"> </script>
+          <script type="text/javascript" src="assets/js/main.js"> </script>
+          <script type="text/javascript" src="assets/js/count-timer.js"> </script>
 
 </html>

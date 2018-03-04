@@ -1,16 +1,95 @@
+/* mobile first design */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
 	margin: 0px;
 	font-family: 'Roboto', sans-serif;
 }
 
+/* background color */
 body {
-	background-image: url("../img/background.jpg");
+	background-image: url("../img/background4.gif");
+  min-height: 100%;
+}
+
+.button-min {
+    background-color: #be463d;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-min:hover {
+    background-color: #ef7267;
+}
+
+.button-plus {
+    background-color: #84ce3a;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-plus:hover {
+    background-color: #aadd77;
+}
+
+/* afstand naar MARS */
+#distance {
+	text-align: center;
+	line-height: 2.2em;
+  background-color: ;
+  color: #62c87a;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #4c98d5;
+}
+
+h4 {
+  color: white;
+}
+
+#km {
+  height: 300px; 
+  width: 100%;
+}
+
+#chartContainer {
+  height: 370px; 
+  max-width: 920px; 
+  margin: 0px auto;
+}
+
+.counter {
+  text-transform: uppercase;
 }
 
 .container {
 	padding-top: 128px;
 }
+
+.active {
+  font-weight: bold;
+  color: #1b5284;
+}
+
+
 
 .flex-container {
   display: flex;
@@ -35,31 +114,57 @@ body {
 
 }
 
+p {
+  color: white;
+}
+
+article p {
+  font-size: 15px;
+}
+
 .flex-item {
  /* background-color: #262e3e;*/
-  background-color: rgba(255, 255, 255, 0.95);
+  /*background-color: rgba(255, 255, 255, 0.95);*/
   width: 92%;
-  margin: 10px;
+  margin: 10px 10px 30px 10px;
   padding-left: 4%;
   padding-right: 4%;
   text-align: center;
   line-height: 75px;
   font-size: 30px;
-  border: 1px solid #ddd;
+/*  border: 1px solid #ddd;*/
   border-radius: 5px;
+  padding-bottom: 50px;
 }
+
+.bar-item {
+	padding: 15px;
+}
+
+
 
 footer {
 	width: 100%;
+   position: fixed;
+
 	height: 25px;
 	background-color: #3a6fb4;
 	overflow: hidden;
 	text-align: center;
 	padding: 10px;
-	margin-top: 50px;
+	margin-top: 100px;
 	color: white;
+     left: 0;
+   bottom: 0;
 }
 
+@media only screen and (min-width: 350px) {
+
+article p {
+  font-size: 20px;
+}
+  
+}
 
 
 @media only screen and (min-width: 600px) {
@@ -71,11 +176,19 @@ footer {
 		padding-right: 5%;
 	}
 
+  article p {
+  font-size: 30px;
+}
+
 
 }
 
 
 @media only screen and (min-width: 1200px) {
+
+    article p {
+  font-size: 35px;
+}
 
 	.container {
 		float: left;

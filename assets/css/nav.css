@@ -1,3 +1,5 @@
+
+
 .topnav {
   overflow: hidden;
   background-color: #ffffff;
@@ -12,9 +14,14 @@
   display: block;
   color: #000;
   text-align: center;
-  padding: 17px 16px;
+  padding: 18px 16px;
+  padding-bottom: 0px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.right {
+  float: right !important;
 }
 
 .topnav a:first-child  {
@@ -30,8 +37,8 @@
 .topnav a img {
   color: #f4e242;
   font-weight: bold;
-  width: 90px;
-  padding-top: 8px;
+  width: 150px;
+  padding-top: 10px;
 
 }
 
@@ -46,6 +53,18 @@
 }
 .topnav #menu {
   display: none;
+}
+
+.avatar-pf {
+  max-width: 35px;
+  border-radius: 50%;
+  padding-top: 0px !important;
+  padding-right: 7px;
+}
+
+nav span {
+      position: relative;
+    bottom: 14px;
 }
 
 
@@ -71,6 +90,9 @@
     transition:all 0.3s linear;
 
   }
+.right {
+  float: none !important;
+}
 
 
 
