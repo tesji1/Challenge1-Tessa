@@ -8,10 +8,11 @@
 
 /* background color */
 body {
-	background-image: url("../img/background4.gif");
+	background-color: black;
   min-height: 100%;
 }
 
+/* button chartjs min */
 .button-min {
     background-color: #be463d;
     border: none;
@@ -30,6 +31,7 @@ body {
     background-color: #ef7267;
 }
 
+/* button chartjs plus */
 .button-plus {
     background-color: #84ce3a;
     border: none;
@@ -114,14 +116,6 @@ h4 {
 
 }
 
-p {
-  color: white;
-}
-
-article p {
-  font-size: 15px;
-}
-
 .flex-item {
  /* background-color: #262e3e;*/
   /*background-color: rgba(255, 255, 255, 0.95);*/
@@ -141,6 +135,13 @@ article p {
 	padding: 15px;
 }
 
+p {
+  color: white;
+}
+
+article p {
+  font-size: 15px;
+}
 
 
 footer {
@@ -162,7 +163,8 @@ footer {
 
 article p {
   font-size: 20px;
-}
+  }
+
   
 }
 
@@ -178,6 +180,11 @@ article p {
 
   article p {
   font-size: 30px;
+  }
+
+  body {
+  background-image: url("../img/background4.gif");
+  min-height: 100%;
 }
 
 
@@ -188,7 +195,7 @@ article p {
 
     article p {
   font-size: 35px;
-}
+  }
 
 	.container {
 		float: left;
@@ -212,19 +219,19 @@ article p {
   font-size: 30px;
   width: 40%;
 
-}
+  }
 .flex-item:nth-of-type(1) {
   flex-grow: 1;
-}
+  }
 .flex-item:nth-of-type(2) {
   flex-grow: 1;
-}
+  }
 
 .flex-item:nth-of-type(3) {
   flex-grow: 3;
-}
+  }
 
 footer {
 	margin-top: 30px;
-}
+  }
 }
