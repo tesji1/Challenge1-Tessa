@@ -44,7 +44,6 @@
 }
 
 .topnav a:hover {
-  background-color: #eee;
   color: black;
 }
 
@@ -79,6 +78,11 @@ nav span {
     transition: 0.5s;
     padding: 28px 16px;
   }
+
+  .topnav a:hover {
+  background-color: #eee;
+  color: black;
+}
   
   .topnav a:first-child {display: block;}
   
