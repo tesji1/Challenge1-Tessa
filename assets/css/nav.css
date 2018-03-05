@@ -66,11 +66,21 @@
 
 nav span {
       position: relative;
-    bottom: 20px;
+    bottom: 11px;
 }
 
 
 @media only screen and (max-width: 980px) {
+.avatar-pf {
+  position: relative;
+  bottom: 0px;
+}
+
+nav span {
+      position: relative;
+    bottom: 20px;
+}
+
   .topnav {
       min-height: 53px;
   }
