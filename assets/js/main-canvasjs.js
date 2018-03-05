@@ -64,7 +64,7 @@ var chart = new CanvasJS.Chart("km", {
     title :{ 
         fontColor: "#62c87a",
         fontFamily: 'Roboto',
-        text: "Aantal meter per seconden"
+        text: "Aantal meters per seconden"
     },
     axisX:{ // opmaak van de x as voor de aantal seconden
         title: "aantal sec",
